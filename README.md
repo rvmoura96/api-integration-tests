@@ -43,3 +43,4 @@ tox -e scanapi
 
 # todo
 * Adicionar suporte a algum sistema de CI, como Github Actions, GitlabCI, CircleCI, etc.
+* Possibilida da execução dos testes em um ambiente docker.
