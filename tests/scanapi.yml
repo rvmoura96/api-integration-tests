@@ -1,0 +1,620 @@
+endpoints:
+  - name: conversor_numeros
+    path: http://challengeqa.staging.devmuch.io/
+    requests:
+      - name: test_zero
+        path: 0
+        method: get
+        tests:
+          - name: validate_zero_case
+            assert:  ${{ response.json()['extenso'] == 'zero' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_one
+        path: 1
+        method: get
+        tests:
+          - name: validate_positive_one
+            assert:  ${{ response.json()['extenso'] == 'um' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_two
+        path: 2
+        method: get
+        tests:
+          - name: validate_positive_two
+            assert:  ${{ response.json()['extenso'] == 'dois' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_three
+        path: 3
+        method: get
+        tests:
+          - name: validate_positive_three
+            assert:  ${{ response.json()['extenso'] == 'três' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_four
+        path: 4
+        method: get
+        tests:
+          - name: validate_positive_four
+            assert:  ${{ response.json()['extenso'] == 'quatro' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_five
+        path: 5
+        method: get
+        tests:
+          - name: validate_positive_five
+            assert:  ${{ response.json()['extenso'] == 'cinco' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_six
+        path: 6
+        method: get
+        tests:
+          - name: validate_positive_six
+            assert:  ${{ response.json()['extenso'] == 'seis' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_seven
+        path: 7
+        method: get
+        tests:
+          - name: validate_positive_seven
+            assert:  ${{ response.json()['extenso'] == 'sete' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_eight
+        path: 8
+        method: get
+        tests:
+          - name: validate_positive_eight
+            assert:  ${{ response.json()['extenso'] == 'oito' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_nine
+        path: 9
+        method: get
+        tests:
+          - name: validate_positive_nine
+            assert:  ${{ response.json()['extenso'] == 'nove' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_ten
+        path: 10
+        method: get
+        tests:
+          - name: validate_positive_ten
+            assert:  ${{ response.json()['extenso'] == 'dez' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_eleven
+        path: 11
+        method: get
+        tests:
+          - name: validate_positive_eleven
+            assert:  ${{ response.json()['extenso'] == 'onze' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_twelve
+        path: 12
+        method: get
+        tests:
+          - name: validate_positive_twelve
+            assert:  ${{ response.json()['extenso'] == 'doze' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_thirteen
+        path: 13
+        method: get
+        tests:
+          - name: validate_positive_thirteen
+            assert:  ${{ response.json()['extenso'] == 'treze' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_fourteen
+        path: 14
+        method: get
+        tests:
+          - name: validate_positive_fourteen
+            assert:  ${{ response.json()['extenso'] == 'catorze' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_fifteen
+        path: 15
+        method: get
+        tests:
+          - name: validate_positive_fifteen
+            assert:  ${{ response.json()['extenso'] == 'quinze' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_sixteen
+        path: 16
+        method: get
+        tests:
+          - name: validate_positive_sixteen
+            assert:  ${{ response.json()['extenso'] == 'dezesseis' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_seventeen
+        path: 17
+        method: get
+        tests:
+          - name: validate_positive_seventeen
+            assert:  ${{ response.json()['extenso'] == 'dezessete' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_eighteen
+        path: 18
+        method: get
+        tests:
+          - name: validate_positive_eighteen
+            assert:  ${{ response.json()['extenso'] == 'dezoito' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_nineteen
+        path: 19
+        method: get
+        tests:
+          - name: validate_positive_nineteen
+            assert:  ${{ response.json()['extenso'] == 'dezenove' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_twenty
+        path: 20
+        method: get
+        tests:
+          - name: validate_positive_twenty
+            assert:  ${{ response.json()['extenso'] == 'vinte' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_zero_en_endpoint
+        path: en/0
+        method: get
+        tests:
+          - name: validate_zero_case
+            assert:  ${{ response.json()['full'] == 'zero' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_one
+        path: en/1
+        method: get
+        tests:
+          - name: validate_positive_one
+            assert:  ${{ response.json()['full'] == 'one' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_two
+        path: en/2
+        method: get
+        tests:
+          - name: validate_positive_two
+            assert:  ${{ response.json()['full'] == 'two' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_three
+        path: en/3
+        method: get
+        tests:
+          - name: validate_positive_three
+            assert:  ${{ response.json()['full'] == 'three' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_four
+        path: en/4
+        method: get
+        tests:
+          - name: validate_positive_four
+            assert:  ${{ response.json()['full'] == 'four' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_five
+        path: en/5
+        method: get
+        tests:
+          - name: validate_positive_five
+            assert:  ${{ response.json()['full'] == 'five' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_six
+        path: en/6
+        method: get
+        tests:
+          - name: validate_positive_six
+            assert:  ${{ response.json()['full'] == 'six' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_seven
+        path: en/7
+        method: get
+        tests:
+          - name: validate_positive_seven
+            assert:  ${{ response.json()['full'] == 'seven' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_eight
+        path: en/8
+        method: get
+        tests:
+          - name: validate_positive_eight
+            assert:  ${{ response.json()['full'] == 'eight' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_nine
+        path: en/9
+        method: get
+        tests:
+          - name: validate_positive_nine
+            assert:  ${{ response.json()['full'] == 'nine' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_ten
+        path: en/10
+        method: get
+        tests:
+          - name: validate_positive_ten
+            assert:  ${{ response.json()['full'] == 'ten' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_eleven
+        path: en/11
+        method: get
+        tests:
+          - name: validate_positive_eleven
+            assert:  ${{ response.json()['full'] == 'eleven' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_twelve
+        path: en/12
+        method: get
+        tests:
+          - name: validate_positive_twelve
+            assert:  ${{ response.json()['full'] == 'twelve' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_thirteen
+        path: en/13
+        method: get
+        tests:
+          - name: validate_positive_thirteen
+            assert:  ${{ response.json()['full'] == 'thirteen' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_fourteen
+        path: en/14
+        method: get
+        tests:
+          - name: validate_positive_fourteen
+            assert:  ${{ response.json()['full'] == 'fourteen' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_fifteen
+        path: en/15
+        method: get
+        tests:
+          - name: validate_positive_fifteen
+            assert:  ${{ response.json()['full'] == 'fifteen' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_sixteen
+        path: en/16
+        method: get
+        tests:
+          - name: validate_positive_sixteen
+            assert:  ${{ response.json()['full'] == 'sixteen' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_seventeen
+        path: en/17
+        method: get
+        tests:
+          - name: validate_positive_seventeen
+            assert:  ${{ response.json()['full'] == 'seventeen' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_eighteen
+        path: en/18
+        method: get
+        tests:
+          - name: validate_positive_eighteen
+            assert:  ${{ response.json()['full'] == 'eighteen' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_nineteen
+        path: en/19
+        method: get
+        tests:
+          - name: validate_positive_nineteen
+            assert:  ${{ response.json()['full'] == 'nineteen' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_twenty
+        path: en/20
+        method: get
+        tests:
+          - name: validate_positive_twenty
+            assert:  ${{ response.json()['full'] == 'twenty' }}
+          - name: validate_request_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_valid_value
+        path: 7777
+        method: get
+        tests:
+          - name: validate_positive_valid_value_content
+            assert:  ${{ response.json()['extenso'] == 'sete mil setecentos e setenta e sete' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_post_method_request
+        path: 7777
+        method: post
+        tests:
+          - name: validate_post_request_status_code
+            assert:  ${{ response.status_code == 405 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_delete_method_request
+        path: 7777
+        method: delete
+        tests:
+          - name: validate_delete_request_status_code
+            assert:  ${{ response.status_code == 405 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_
+        path: 7777
+        method: put
+        tests:
+          - name: validate_put_request_status_code
+            assert:  ${{ response.status_code == 405 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_
+        path: 7777
+        method: patch
+        tests:
+          - name: validate_patch_request_status_code
+            assert:  ${{ response.status_code == 405 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_limit
+        path: 10000
+        method: get
+        tests:
+          - name: validate_positive_limit_value
+            assert:  ${{ response.json()['extenso'] == 'dez mil' }}
+          - name: validate_positive_limit_value_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_limit_overflow
+        path: 10001
+        method: get
+        tests:
+          - name: validate_positive_limit_value
+            assert:  ${{ response.json()['extenso'] == 'Invalid data' }}
+          - name: validate_status_code
+            assert:  ${{ response.status_code == 400 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_negative_midrange_endpoint
+        path: -5000
+        method: get
+        tests:
+          - name: validate_negative_midrange_value
+            assert:  ${{ response.json()['extenso'] == 'menos cinco mil' }}
+          - name: validate_negative_limit_value_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_negative_limit
+        path: -10000
+        method: get
+        tests:
+          - name: validate_negative_limit_value
+            assert:  ${{ response.json()['extenso'] == 'menos dez mil' }}
+          - name: validate_negative_limit_value_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_negative_limit_overflow
+        path: -10001
+        method: get
+        tests:
+          - name: validate_negative_limit_value_over_flow
+            assert:  ${{ response.json()['extenso'] == 'Invalid data' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 400 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_negative_one
+        path: -1
+        method: get
+        tests:
+          - name: validate_negative_limit_value_over_flow
+            assert:  ${{ response.json()['extenso'] == 'menos um' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_invalid_value
+        path: um
+        method: get
+        tests:
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 400 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_invalid_value
+        path: /en/um
+        method: get
+        tests:
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 400 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_limit_en_endpoint
+        path: en/10000
+        method: get
+        tests:
+          - name: validate_positive_
+            assert:  ${{ response.json()['full'] == 'ten thousand' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_negative_limit_en_endpoint
+        path: en/-10000
+        method: get
+        tests:
+          - name: validate_negative_
+            assert:  ${{ response.json()['full'] == 'minus ten thousand' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_negative_limit_en_endpoint_plus_one
+        path: en/-10001
+        method: get
+        tests:
+          - name: validate_negative_
+            assert:  ${{ response.json()['full'] == 'Invalid data' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 400 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_limit_en_endpoint_plus_one
+        path: en/10001
+        method: get
+        tests:
+          - name: validate_negative_
+            assert:  ${{ response.json()['full'] == 'Invalid data' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 400 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_positive_midrange_en_endpoint
+        path: en/5000
+        method: get
+        tests:
+          - name: validate_positive
+            assert:  ${{ response.json()['full'] == 'five thousand' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_negative_midrange_en_endpoint
+        path: en/-5000
+        method: get
+        tests:
+          - name: validate_negative
+            assert:  ${{ response.json()['full'] == 'minus five thousand' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 200 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_negative_midrange_en_endpoint
+        path: en/'-5000'
+        method: get
+        tests:
+          - name: validate_negative
+            assert:  ${{ response.json()['full'] == 'Invalid data' }}
+          - name: validate_negative_limit_value_overflow_status_code
+            assert:  ${{ response.status_code == 400 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
+      - name: test_console_endpoint
+        path: console
+        method: get
+        tests:
+          - name: validate_invalid_value__status_code
+            assert:  ${{ response.status_code == 400 }}
+          - name: validate_request_content_type
+            assert:  ${{ response.headers.get('Content-Type') == "application/json" }}
