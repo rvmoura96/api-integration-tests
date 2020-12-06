@@ -8,11 +8,11 @@ authors = ["Your Name <you@example.com>"]
 python = "^3.8"
 locust = "^1.4.1"
 tox = "^3.20.1"
-hypothesis = "^5.41.5"
+scanapi = "^2.1.0"
+
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
-scanapi = "^2.1.0"
 ipdb = "^0.13.4"
 ipython = "^7.19.0"
 
