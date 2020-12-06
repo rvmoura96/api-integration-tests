@@ -39,3 +39,7 @@ Para executarmos os testes de contrato conseguimos a partir do seguinte comando 
 ```
 tox -e scanapi
 ```
+
+
+# todo
+* Adicionar suporte a algum sistema de CI, como Github Actions, GitlabCI, CircleCI, etc.
